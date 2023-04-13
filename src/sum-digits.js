@@ -13,16 +13,15 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function getSumOfDigits(n) {
-    const arrayOfDigits = [...n.toString()].map(Number);
-    let sum = arrayOfDigits.reduce((acc, curr) => acc + curr, 0);
-    let isOneDigitNumber = false;
-    while (isOneDigitNumber !== true) {
-        isOneDigitNumber = sum.toString().length === 1;
-        sum = [...sum.toString()].map(Number).reduce((acc, curr) => acc + curr, 0);
-    }
-    return sum;
+  let sum = [...n.toString()].map(Number).reduce((acc, curr) => acc + curr, 0);
+  let isOneDigitNumber = false;
+  while (isOneDigitNumber !== true) {
+    isOneDigitNumber = sum.toString().length === 1;
+    sum = [...sum.toString()].map(Number).reduce((acc, curr) => acc + curr, 0);
+  }
+  return sum;
 }
 
 module.exports = {
-    getSumOfDigits,
+  getSumOfDigits,
 };
