@@ -14,13 +14,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function transform(arr) {
-  if (!Array.isArray(arr)) throw new Error("'arr' parameter must be an instance of the Array!");
-  const commandsList = {
-    '--double-next': (array, next) => {},
-    '--double-prev': (array, prev) => {},
-    '--discard-next': (array, next) => {},
-    '--discard-prev': (array, prev) => {},
-  };
+  throw new NotImplementedError('Not implemented');
+  // remove line with error and write your code here
 }
 
 module.exports = {

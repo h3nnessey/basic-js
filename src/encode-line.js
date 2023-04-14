@@ -11,9 +11,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine(str = 'aabbbc') {
-    // AssertionError: expected '2a2b2c' to equal 'a2b2ca'
+  // AssertionError: expected '2a2b2c' to equal 'a2b2ca'
 }
 
 module.exports = {
-    encodeLine,
+  encodeLine,
 };

@@ -11,10 +11,10 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function getEmailDomain(email) {
-    const lastIndexOfAt = email.lastIndexOf('@');
-    return email.slice(lastIndexOfAt + 1);
+  const lastIndexOfAt = email.lastIndexOf('@');
+  return email.slice(lastIndexOfAt + 1);
 }
 
 module.exports = {
-    getEmailDomain,
+  getEmailDomain,
 };
